@@ -108,7 +108,7 @@ def rozwiazywanie_rownania(macierz: list) -> list:
     '''
 
     if not macierz or not isinstance(macierz, list) or not isinstance(macierz[0], list):
-        raise ValueError('Podana lista nie jest macierzą.')
+        raise ValueError('Podany argument nie jest macierzą.')
 
     dim_x, dim_y = len(macierz), len(macierz[0])
 
@@ -160,6 +160,7 @@ A = [
 A_result = rozwiazywanie_rownania(A)
 print('A: ', A_result)
 
+
 # oznaczony
 B = [
     [1, 2, 3, 3, 4],
@@ -171,6 +172,7 @@ B = [
 B_result = rozwiazywanie_rownania(B)
 print('B: ', B_result)
 
+
 # sprzeczny
 C = [
     [1, 1, 3],
@@ -179,6 +181,7 @@ C = [
 
 C_result = rozwiazywanie_rownania(C)
 print('C: ', C_result)
+
 
 # nieoznaczony
 D = [
@@ -189,6 +192,7 @@ D = [
 D_result = rozwiazywanie_rownania(D)
 print('D: ', D_result)
 
+
 # oznaczony
 E = [
     [1, 2, 5],
@@ -197,6 +201,7 @@ E = [
 
 E_result = rozwiazywanie_rownania(E)
 print('E: ', E_result)
+
 
 # oznaczony
 F = [
@@ -208,6 +213,7 @@ F = [
 F_result = rozwiazywanie_rownania(F)
 print('F: ', F_result)
 
+
 # sprzeczny
 G = [
     [1, 2, 5],
@@ -216,6 +222,7 @@ G = [
 
 G_result = rozwiazywanie_rownania(G)
 print('G: ', G_result)
+
 
 # sprzeczny
 H = [
