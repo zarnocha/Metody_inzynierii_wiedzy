@@ -4,7 +4,7 @@ import numpy as np
 
 def macierz_odwrotna(macierz: list[list]) -> list[list]:
     if not macierz or not isinstance(macierz, list) or not isinstance(macierz[0], list):
-        raise ValueError('Podana lista nie jest macierzą.')
+        raise ValueError('Podany argument nie jest macierzą.')
 
     dim_x, dim_y = len(macierz), len(macierz[0])
 
@@ -74,7 +74,8 @@ result_s = macierz_odwrotna(macierz_s)
 print('macierz s):\n', np.array(result_s), '\n')
 
 
-# macierz z https://www.intmath.com/matrices-determinants/inverse-matrix-gauss-jordan-elimination.php
+# macierz 5x5 z
+# https://www.intmath.com/matrices-determinants/inverse-matrix-gauss-jordan-elimination.php
 macierz = [
     [8, 2, 3, 7, 13],
     [10, 4, 5, 11, 6],
